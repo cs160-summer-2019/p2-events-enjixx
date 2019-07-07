@@ -64,6 +64,33 @@
 
 <script type="text/javascript">
 	// your solution here
+  
+  // Purple bubbles
+  $( ".p2-circle.bg-purple" ).click(function( event ) {
+  event.preventDefault();
+  $( ".p2-circle.bg-purple" ).hide(); });
+  
+  // Green and blue bubbles
+  $( ".p2-circle.bg-green" ).click(function( event ) {
+    event.preventDefault();
+  $(".p2-circle.bg-green, .p2-circle.bg-blue, .p2-circle.bg-blue.p2-border").hide(); });
+  
+  // Orange bordered bubbles
+  $( ".p2-circle.bg-orange.p2-border" ).click(function( event ) {
+    event.preventDefault();
+  $( ".p2-circle.bg-orange.p2-border" ).hide(); });
+  
+  // Gradient bubble
+  $( "#gradient-circle" ).hover(function( event ) {
+    event.preventDefault();
+  $( this ).hide(); });
+  
+  // Reset button
+  $(".btn.btn-light.float-right").click(function( event ){
+  $( ".p2-circle" ).show(); });
+    
+
+ 
 
 </script>
 </body>
